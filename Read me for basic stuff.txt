@@ -1,0 +1,38 @@
+To fix the noob run.bat error (if you can't run server and it gives you errors)
+
+Use this link to download JDK 6. Then, compile the server, and run it after you install JDK 6.
+
+x86: https://dl.dropboxusercontent.com/u/68908723/jdk-6u45-windows-i586.exe
+x64: https://dl.dropboxusercontent.com/u/68908723/jdk-6u45-windows-x64.exe
+
+Change owner commands: 
+~ CommandPacketHandler
+~ AdminCommands
+Replace "aviboss" (in quotations) with your owner name (in quotations)
+Replace "goudont" (in quotations) with your owner name (in quotations)
+
+To make yourself owner:
+~ ActionSender.java
+Replace: "Goudont" with "yourownername"
+Replace: "Aviboss" with "yourownername"
+
+If it demotes you automatically upon login, change the names in ActionSender.java,
+and use the ;;givemod, ;;giveadmin command to prevent it for other staff on your server.
+
+Change Server name in:
+~ Config.java
+
+Change owner names in:
+~Config.java
+
+Change welcome screen stuff in:
+~Config.java
+
+Change welcome message in:
+~Config.java
+
+Anything to do with server name or something, use config.java
+
+
+If any questions you have are not in this file, please post in the mopar-scape section.
+Other wise, if all your questions are answered, please be sure to post comments.
